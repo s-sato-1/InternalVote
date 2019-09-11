@@ -1,0 +1,28 @@
+{% extends "InternalVote/base.html" %}
+{% block content %}
+  <h2>Result</h2>
+  {% if awd %}
+    <table border="1">
+    <tr>
+    <th>id</th>
+    <th>award_text</th>
+    <th>employment_text</th>
+    <th>prizewinner_text</th>
+    <th>reason_text</th>
+    <th>create_date</th>
+    </tr>
+    {% for dat in awd %}
+      <tr>
+        <td>{{ dat.id }}</td>
+        <td>{{ dat.award_text }}</td>
+        <td>{{ dat.employment_text }}</td>
+        <td>{{ dat.prizewinner_text }}</td>
+        <td>{{ dat.reason_text }}</td>
+        <td>{{ dat.create_date }}</td>
+      </tr>
+    {% endfor %}
+    </table>
+  {% else %}
+    <p>No dat.</p>
+  {% endif %}
+{% endblock %}

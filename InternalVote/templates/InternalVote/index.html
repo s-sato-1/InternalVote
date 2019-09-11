@@ -1,0 +1,53 @@
+{% extends "InternalVote/base.html" %}
+{% block content %}
+  <h2>Vote</h2>
+  <!-- form -->
+  <form method="post" class="">
+    <table>
+      {% csrf_token %}
+      <tbody>
+        <tr>
+          <th>award_text</th>
+          <td>{{ form.award_text }}</td>
+        <tr>
+        <tr>
+          <th>employment_text</th>
+          <td>{{ form.employment_text }}</td>
+        <tr>
+         <tr>
+          <th>prizewinner_text</th>
+          <td>{{ form.prizewinner_text }}</td>
+        <tr>
+         <tr>
+          <th>reason_text</th>
+          <td>{{ form.reason_text }}</td>
+        <tr>
+      </tbody>
+    </table>
+    <div class="div-001">
+      <!-- submit -->
+      <input class="" type="submit" value="Submit">
+      <!-- reset -->
+      <input class="" type="reset" value="Reset">
+    </div>
+  </form>
+  <h2>Discription</h2>
+  <!-- table -->
+  {% if awd_mst %}
+    <table border="1">
+      {% csrf_token %}
+      <tr>
+        <th>award_text</th>
+        <th>discription_text</th>
+      </tr>
+    {% for dat in awd_mst %}
+      <tr>
+        <td>{{ dat.award_mst_text }}</td>
+        <td>{{ dat.discription_text }}</td>
+      </tr>
+    {% endfor %}
+    </table>
+  {% else %}
+    <p>No dat.</p>
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- head -->
+<head>
+<meta charset="utf-8">
+<title>InternalVote</title>
+<!-- style css -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'InternalVote/style.css' %}">
+<link rel="shortcut icon" type="image/png" href="{% static 'InternalVote/image/favicon.ico' %}"/>
+</head>
+<!-- body -->
+<body>
+<header>
+<h1>InternalVote</h1>
+<p>discription</p>
+</header>
+  {% block content %}{% endblock %}
+<!-- link -->
+<h3>Links</h3>
+<ul>
+  <li><a href="{% url 'InternalVote:index' %}">Go to InternalVote Index?</a></li>
+  <li><a href="{% url 'InternalVote:result' %}">Go to InternalVote Result?</a></li>
+  <li><a href="{% url 'admin:index' %}">Go to Administrator Index?</a></li>
+</ul>
+<!-- footer -->
+<footer>
+  <div>
+    <small>Copyright &#169; 2019 InternalVote All Rights Reserved.</small>
+  </div>
+</footer>
+</body>
+</html>

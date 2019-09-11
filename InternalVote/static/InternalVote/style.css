@@ -1,0 +1,26 @@
+/* body */
+body {
+    color: black;
+    /*font-family: "Consolas";*/
+    font-family: "MeryoUI";
+}
+/* h3 */
+h3 {
+    margin-top: 50px;
+}
+/* table */
+table {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/* textarea */
+textarea {
+    color: black;
+    /*font-family: "Consolas";*/
+    font-family: "MeryoUI";
+}
+/* div class */
+.div-001 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
