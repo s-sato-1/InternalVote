@@ -7,7 +7,7 @@ from .models import Award
 # ====================================================
 
 class AwardForm(forms.ModelForm):
-    """
+    """ AwardForm
     """
     class Meta:
         model = Award

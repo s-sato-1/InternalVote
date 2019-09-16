@@ -17,6 +17,8 @@ class AwardAdmin(admin.ModelAdmin):
     )
 admin.site.register(Award, AwardAdmin)
 
+# ====================================================
+
 class AwardMstAdmin(admin.ModelAdmin):
     """ Award Description
     """

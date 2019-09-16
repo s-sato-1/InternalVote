@@ -1,5 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
+from django.views.generic import TemplateView
+from django.urls import reverse
 
 # ====================================================
 
@@ -30,7 +32,8 @@ def index(request):
                 'form': form,
 		'awd_mst': awd_mst,
             }
-            return render(request, 'InternalVote/index.html', context)
+            #return render(request, 'InternalVote/index.html', context)
+            return HttpResponseRedirect(reverse('InternalVote:voted')) 
     else:
         pass
 
@@ -43,6 +46,13 @@ def index(request):
         'awd_mst': awd_mst,
     }
     return render(request, 'InternalVote/index.html', context)
+
+# ====================================================
+
+def voted(request):
+    """ Voted
+    """
+    return render(request, 'InternalVote/voted.html')
 
 # ====================================================
 

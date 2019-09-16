@@ -33,7 +33,9 @@ class Award(models.Model):
 
     # Create Date
     create_date = models.DateTimeField(default=timezone.now)
-   
+
+# ====================================================
+
 class AwardMst(models.Model):
     """ Award Description 
     """
