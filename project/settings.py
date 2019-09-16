@@ -73,9 +73,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'project.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+
+# _/_/_/_/_/_/_/_/
+#   sqlite3
+# _/_/_/_/_/_/_/_/
 
 # DATABASES = {
 #     'default': {
@@ -83,6 +86,10 @@ WSGI_APPLICATION = 'project.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+
+# _/_/_/_/_/_/_/_/
+#   mysql
+# _/_/_/_/_/_/_/_/
 
 DATABASES = {
     'default': {

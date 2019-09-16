@@ -1,3 +1,4 @@
+@charset "utf-8";
 /* body */
 body {
     color: black;
@@ -13,11 +14,25 @@ table {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+/* th */
+th {
+    text-align: center;
+    color: black;
+}
+td {
+    text-align: left;
+    white-space: break-spaces;
+}
+/* tbody */
+tbody > tr:nth-of-type(even) {
+    background-color: #daeaff;
+}
 /* textarea */
 textarea {
     color: black;
     /*font-family: "Consolas";*/
     font-family: "MeryoUI";
+    word-wrap: "hard";
 }
 /* div class */
 .div-001 {
