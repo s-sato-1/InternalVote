@@ -33,10 +33,8 @@ $ python manage.py runserver
 
 ```
 
-## Future
+## ToDo
 
-+ use mysql
-
-+ use Oauth2
++ use OAuth2
 
 
